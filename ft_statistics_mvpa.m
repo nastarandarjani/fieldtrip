@@ -369,7 +369,7 @@ end
 
 % build dimord from result struct
 if has_dimord
-  dimord = strrep(result.perf_dimension_names, ' ', '');
+  dimord = strrep(result.perf_dimension_names{1}, ' ', '');
   if iscell(dimord), dimord = strjoin(dimord, '_'); end
 end
 
